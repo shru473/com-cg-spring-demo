@@ -18,8 +18,7 @@ public class App {
 
 		System.out.println("Create spring container object");
 		ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfig.xml");
-		ApplicationContext context2 = new ClassPathXmlApplicationContext("SpringConfig2.xml");
-
+		
 		System.out.println("Property injection / Setter injection");
 		Employee emp = context.getBean("employee", Employee.class);
 		emp.work();
